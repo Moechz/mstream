@@ -1,0 +1,112 @@
+{
+  "app_id": "mstreamdocker",
+  "title": "mStream",
+  "image": "linuxserver/mstream:6.33.1",
+  "repo_name": "mstream",
+  "mode": "wrapper",
+  "container_port": 3000,
+  "category": [
+    "Audio_Video_Entertainment"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/mstreamdocker/config",
+      "container": "/config"
+    },
+    {
+      "host": "/Volume1/DockerAppData/mstreamdocker/music",
+      "container": "/music"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "IrosTheBeggar",
+  "upstream_url": "https://github.com/IrosTheBeggar/mStream",
+  "upstream_license": "GPL-3.0",
+  "descript": "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only.",
+  "release_note": "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder.",
+  "important": "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": [
+      "/init"
+    ],
+    "cmd": null,
+    "exposed_ports": [
+      3000
+    ],
+    "declared_volumes": [
+      "/config"
+    ],
+    "image_healthcheck": [],
+    "digest": "linuxserver/mstream@sha256:7cec5624995f479095b246856e68643b5fb510218a741b6121158fd55473a7fd",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": true,
+      "http_code": "",
+      "state": "running",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "eration not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted\ns6-applyuidgid: fatal: unable to set supplementary group list: Operation not permitted",
+      "files_in_mounts": "/tmp/tosdocker-trial-1794738904/config/config.json\n/tmp/tosdocker-trial-1794738904/config/keys/certificate.pem\n/tmp/tosdocker-trial-1794738904/config/keys/private-key.pem"
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "linuxserver",
+      "repo": "docker-mstream",
+      "description": "",
+      "license": "GPL-3.0",
+      "homepage": ""
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -s -o /dev/null http://127.0.0.1:3000/ || exit 1"
+  ],
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "mstreamdocker",
+  "github_repo": "mstream",
+  "upstream_version": "6.33.1",
+  "release_tag_prefix": "v",
+  "version": "6.33.1-1",
+  "help": "https://github.com/Moechz/mstream/issues",
+  "official": "https://github.com/IrosTheBeggar/mStream",
+  "license": "GPL-3.0",
+  "docker_socket": false,
+  "group_add": [],
+  "entrypoint_file": "src/entrypoint.sh",
+  "host_port": 8171,
+  "healthcheck_start_period": "45s",
+  "wrapper_note": "the LinuxServer image starts mStream through s6 as root; that cannot happen in\na non-root container. This wrapper writes a minimal config on the first start and\nstarts the node server directly with the music folder on the volume.",
+  "wrapper_note_readme": "- **Entrypoint wrapper**: bypasses s6, writes `config.json` on the volume on first start and runs `mstream -j /config/config.json` as uid 1000.",
+  "translations": {
+    "zh-cn": {
+      "descript": "mStream 是个人音乐流媒体服务：扫描一个音乐目录，就能在浏览器或 mStream 客户端里串流播放，支持播放列表、分享链接、点唱机模式以及 Subsonic 风格访问。小型数据库保存在应用数据目录，音乐目录按只读方式读取。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。把音乐放进 DockerAppData/mstreamdocker/music，打开界面创建管理员账号；配置与数据库保存在 DockerAppData/mstreamdocker/config。大曲库首次扫描需要时间。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。",
+      "release_note": "1. 首个版本：基于 Docker Hub（LinuxServer 镜像）的 mStream 6.33.1，以非 root 容器运行。音乐串流，支持播放列表与分享；数据库保存在应用数据目录。"
+    },
+    "zh-hk": {
+      "descript": "mStream 是個人音樂串流服務：掃描一個音樂目錄，就能在瀏覽器或 mStream 用戶端裡串流播放，支援播放清單、分享連結、點唱機模式以及 Subsonic 風格存取。小型資料庫保存在應用資料目錄，音樂目錄按唯讀方式讀取。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。把音樂放進 DockerAppData/mstreamdocker/music，開啟介面建立管理員帳號；設定與資料庫保存在 DockerAppData/mstreamdocker/config。大曲庫首次掃描需要時間。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。",
+      "release_note": "1. 首個版本：基於 Docker Hub（LinuxServer 映像）的 mStream 6.33.1，以非 root 容器運行。音樂串流，支援播放清單與分享；資料庫保存在應用資料目錄。"
+    }
+  },
+  "data_notes": "`/config` keeps `config.json` and the mStream database; `/music` (mounted from `.../music`) is the read-only library.",
+  "design_notes": [
+    "**Direct node start.** s6 cannot run unprivileged; the wrapper writes the config and starts mstream directly.",
+    "**Health check via node.** The image has no curl/wget, so the check uses `node -e` with the http module."
+  ],
+  "limitations": [
+    "- First scan of a large library takes time and CPU.",
+    "- Transcoding depends on the ffmpeg bundled in the image.",
+    "- The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+  ]
+}

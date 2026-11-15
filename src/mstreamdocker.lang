@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "mstreamdocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[zh-cn]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream 是个人音乐流媒体服务：扫描一个音乐目录，就能在浏览器或 mStream 客户端里串流播放，支持播放列表、分享链接、点唱机模式以及 Subsonic 风格访问。小型数据库保存在应用数据目录，音乐目录按只读方式读取。"
+release_note = "1. 首个版本：基于 Docker Hub（LinuxServer 镜像）的 mStream 6.33.1，以非 root 容器运行。音乐串流，支持播放列表与分享；数据库保存在应用数据目录。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。把音乐放进 DockerAppData/mstreamdocker/music，打开界面创建管理员账号；配置与数据库保存在 DockerAppData/mstreamdocker/config。大曲库首次扫描需要时间。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。"
+
+[zh-hk]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream 是個人音樂串流服務：掃描一個音樂目錄，就能在瀏覽器或 mStream 用戶端裡串流播放，支援播放清單、分享連結、點唱機模式以及 Subsonic 風格存取。小型資料庫保存在應用資料目錄，音樂目錄按唯讀方式讀取。"
+release_note = "1. 首個版本：基於 Docker Hub（LinuxServer 映像）的 mStream 6.33.1，以非 root 容器運行。音樂串流，支援播放清單與分享；資料庫保存在應用資料目錄。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。把音樂放進 DockerAppData/mstreamdocker/music，開啟介面建立管理員帳號；設定與資料庫保存在 DockerAppData/mstreamdocker/config。大曲庫首次掃描需要時間。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。"
+
+[fr-fr]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[de-de]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[it-it]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[es-es]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[hu-hu]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ja-jp]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ko-kr]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pl-pl]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ru-ru]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[tr-tr]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pt-pt]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ar-sa]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[cs-cz]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[he-il]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[id-id]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nb-no]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nl-nl]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[sv-se]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[th-th]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[vi-vn]
+name         = "mStream"
+auth         = "IrosTheBeggar"
+version      = "@@VERSION@@"
+descript     = "mStream is a personal music streaming server: scan a folder of music and stream it in the browser or through the mStream apps, with playlists, sharing links, a jukebox mode and Subsonic-style access. It keeps its small database in the application data folder and reads the music folder read-only."
+release_note = "1. First release: mStream 6.33.1 from Docker Hub (LinuxServer image) as a non-root container. Music streaming with playlists and sharing; database in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Put music in DockerAppData/mstreamdocker/music, open the UI and create the admin account; the config and database live in DockerAppData/mstreamdocker/config. Scanning large libraries takes a while. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
